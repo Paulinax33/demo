@@ -1,9 +1,9 @@
 package pl.deren.demo;
 
 public class Plane {
-    public String speed;
+    public int speed;
 
-    public Plane(String speed) {
+    public Plane(int speed) {
         this.speed = speed;
     }
 }

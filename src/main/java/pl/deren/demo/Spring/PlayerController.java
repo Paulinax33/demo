@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.Entity;
 
-@Entity
+@RestController
 public class PlayerController {
     private final PlayerService playerService;
 

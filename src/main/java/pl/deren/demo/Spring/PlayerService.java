@@ -32,4 +32,10 @@ public class PlayerService {
         player.setId(id);
         return playerRepository.save(player).getId();
     }
+    public boolean findByMoney(int money){
+        if (playerRepository.findByMoney(money)){
+            return true;
+        }
+        return false;
+    }
 }

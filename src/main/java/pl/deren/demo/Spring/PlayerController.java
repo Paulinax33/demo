@@ -14,7 +14,7 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
-    @GetMapping(value = "/get/player")
+    @GetMapping(value = "/get/player/{id}")
     public PlayerHTTPResponse getPlayerById(@PathVariable long id){
         return playerService.getPlayerById(id);
     }
